@@ -1,0 +1,135 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family:'Merriweather Sans', sans-serif;
+}
+.logo{
+  font-size: 28px;
+  font-family: cursive;
+  color:cornsilk;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 15px;
+  width:fit-content;
+  cursor: pointer;
+}
+.nav-bar {
+  background-color: rgb(58, 51, 51);
+  width: 100%;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+  transition: all .3s ease-in-out;
+  transform: scaleY(1);
+  top: 0px;
+  transition: all ease-in-out 250ms;
+}
+.nav-btn{
+  width: 30%;
+  height: 100%;
+}
+.nav-btn ul{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-btn li{
+  font-size: large;
+  list-style: none;
+ 
+}
+li a {
+  text-decoration:none;
+  color:white;
+  padding-right:3em;
+  position:relative;
+}
+li a::after{
+  content:'';
+  position:absolute;
+  display:block;
+  height:0.1em;
+  width:0%;
+  background-color:var(--green);
+  
+  transition:all ease-in-out 250ms;
+  
+}
+li a:hover::after{
+  width:60%;
+}
+li a:hover{
+  color:chartreuse;
+}
+.nav-btn li::before{
+  left: 0;
+  margin:0 auto;
+  right:0;
+  width: 0%;
+  transition: .3s;
+}
+.nav-btn li a{
+  text-decoration: none;
+  color:antiquewhite;
+}
+
+li a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0.1em;
+  width: 0%;
+  background-color: var(--green);
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after {
+  width: 60%;
+}
+
+li a:hover {
+  color: chartreuse;
+}
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-top: 40px; 
+  margin-bottom: 16px;
+  padding-top: 30px;
+}
+input[type=submit] {
+  background-color:orange;
+  color: white;
+  padding: 40px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color:red;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;background-color: #e5e5f7;
+opacity: 0.8;
+
+}
+body{
+    height: 100vh;
+    width: 100%
+    display: flex;
+}
+.social{
+    border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

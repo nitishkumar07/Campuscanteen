@@ -1,0 +1,37 @@
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-top: 40px; 
+  margin-bottom: 16px;
+}
+input[type=submit] {
+  background-color:grey;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color:white;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;background-color: gray;
+opacity: 0.8;
+
+}
+body{
+    height: 100vh;
+    width: 100%
+    display: flex;
+}
+.social{
+    border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

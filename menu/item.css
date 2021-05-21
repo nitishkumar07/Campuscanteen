@@ -1,0 +1,68 @@
+h1:hover{
+    color: red;
+}
+h1{
+    text-align: center;
+}
+.box1{
+    display: flex;
+    flex-direction:column;
+    padding: 10px;
+    margin: none;
+    border: 1px;
+    background-color: whitesmoke;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+.item:hover{
+    opacity: .4;
+    transform: scale(1.2);
+}
+.quantity{
+    
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-self: auto;s
+}
+.action{
+    display: flex;
+    flex-direction:row;
+}
+.cart, .rem{
+    padding: 10px;
+    margin: 10px;
+    border: 1px ;
+    border-radius: 10px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.rem:hover, .cart:hover{
+    color: red;
+}
+.ck{
+    border: 2px;
+}
+.countainer1, .countainer2{
+    display: flex;
+    flex-direction: row;
+    
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+

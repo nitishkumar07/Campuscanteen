@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Merriweather Sans', sans-serif;
+}
+.logo{
+    font-size: 28px;
+    font-family: cursive;
+    color:cornsilk;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 15px;
+    width:fit-content;
+    cursor: pointer;
+}
+.a{
+    align-items: center;
+}
+.nav-bar{
+    background-color: rgb(58, 51, 51);
+    width: 100%;
+    height: 60px;
+    color:white;
+    display: flex;
+    justify-content:space-between;
+    position: fixed;
+    z-index: 5;
+    transition: all .3s ease-in-out;
+    transform: scaleY(1);
+    top: 0px;
+}
+.nav-btn{
+    width: 30%;
+    height: 100%;
+}
+.nav-btn ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-btn li{
+    font-size: larg;
+    list-style: none;
+    position: relative;
+}
+.nav-btn li::before{
+    left: 0;
+    margin:0 auto;
+    right:0;
+    width: 0%;
+    transition: .3s;
+}
+.nav-btn li a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+.mySlides {
+    display: none
+  }
+  img {
+
+      margin-top: 10px;
+    vertical-align: middle;
+    width:1390px;
+    height: 500px;
+  }
+  .slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    height: 300px;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* Caption text */
+  .text {
+      padding-bottom: 200px;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 8px 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 30px 12px;
+    position: absolute;
+    top: 0;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active,
+  .dot:hover {
+    background-color: #111111;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name:fade;
+    animation-duration: 3s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 1
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 1
+    }
+    to {
+      opacity: 1
+    }
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        color: black;
+        font-style: bold;
+      font-size: 30px
+    }
+  }
+  .row{
+      height: 200px;
+  }
