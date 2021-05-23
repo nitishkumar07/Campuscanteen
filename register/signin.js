@@ -13,14 +13,14 @@ window.addEventListener("load",function(){
     registerbtn.addEventListener("click",signupBtnHandler);
 })
 function loginbtnHandler(){
-    window.location.href="login/login.html";
+    window.location.href="../login.html";
 
 }
 function signupBtnHandler (e){
     e.preventDefault();
     if(username.value && email.value && pw.value && cpw.value)
     {
-        window.location.href="menu/menu.html";
+        window.location.href="../menu.html";
     }
     else{
         mess.innerHTML="All fiends are mandatory!";
