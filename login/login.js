@@ -11,7 +11,7 @@ window.addEventListener("load",function(){
 
 })
 function registerbtnHandler(){
-    window.location.href="../register.html";
+    window.location.href="../register/register.html";
 
 }
 async function submitbtnHandler(e){
@@ -22,7 +22,7 @@ async function submitbtnHandler(e){
         let obj = await axios.post( "https://foodcolony.herokuapp.com/user/login" , {email:email.value , password:pw.value});
         console.log(obj);
         if(obj.data.data){
-            window.location.href="../menu.html";
+            window.location.href="../menu/item.html";
 
         }
         else{

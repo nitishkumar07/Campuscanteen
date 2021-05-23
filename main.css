@@ -92,7 +92,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('/home/nitish/Downloads/Campuscanteen-main/images/foodback.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('images/foodback.jpeg') center/cover no-repeat;
     color: #fff;
 }
 .nav-bar {
@@ -262,7 +262,7 @@ blockquote span{
 }
 .sec-one-left {
     height: 50px;
-    background: url("/home/nitish/Downloads/Campuscanteen-main/images/food15.jpeg") center/cover no-repeat;
+    background: url("food15.jpeg") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
@@ -304,13 +304,13 @@ blockquote span{
 }
 .work-img-1{
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),
-    url('/home/nitish/Downloads/Campuscanteen-main/images/food3.jpeg') center/cover no-repeat;
+    url('images/food3.jpeg') center/cover no-repeat;
     height: 400px; 
     transition: var(--transition);
 }
 .work-img-2{
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)),
-    url('/home/nitish/Downloads/Campuscanteen-main/images/flower.jpeg') center/cover no-repeat;
+    url('images/flower.jpeg') center/cover no-repeat;
     height: 400px; 
     transition: var(--transition);
 }
@@ -450,12 +450,6 @@ blockquote span{
     text-align: center;
     font-size: 14px;
 }
-/**** end of footer *****/
-  
-
-
-/**** media queries ****/
-
 
 
 @media screen and (min-width: 678px){

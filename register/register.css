@@ -14,7 +14,10 @@
     width:fit-content;
     cursor: pointer;
 }
-.a{
+.logo a{
+    font-family: cursive;
+    color:cornsilk;
+    text-decoration: none;
     align-items: center;
 }
 :root{
@@ -246,10 +249,12 @@ button a:hover {
 }
 input{
 
-    background-color: lemonchiffon;
     width:100%;
     flex-wrap: wrap;
     margin: 10px 0px;
+    
+    border: 0px 0px 0px 10px;
+    border-color: black;
 
 }
 .form{

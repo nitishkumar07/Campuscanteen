@@ -14,7 +14,10 @@
     width:fit-content;
     cursor: pointer;
 }
-.a{
+.logo a{
+    font-family: cursive;
+    color:cornsilk;
+    text-decoration: none;
     align-items: center;
 }
 :root{
