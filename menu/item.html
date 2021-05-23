@@ -5,9 +5,61 @@
     <script src="https://kit.fontawesome.com/5d4fed1d9a.js" crossorigin="anonymous"></script>
    </head>
     <body>
-    <h1 style="text-align: center">FOOD SECTION : 1</h1>
+        <div class="nav-bar">
+            <div class="logo"><a href="/home/nitish/Desktop/Campuscanteen/home/index.html">Canteen</a></div>
+              <div class="nav-btn">
+                  <ul>
+                    <li><a class="" href="/home/nitish/Desktop/Campuscanteen/home/index.html">Home</a></li>
+                    <li><a class="" href="/home/nitish/Desktop/Campuscanteen/about/about2.html">About</a></li>
+                    <li><a class="" href="/home/nitish/Desktop/Campuscanteen/contact/foot1.html">Contact</a></li>
+                      <li><a class="" href="/home/nitish/Desktop/Campuscanteen/home/index.html">Logout</a></li>
+                  </ul>
+              </div>
+              </div>
+              <div class="row first">
+  
+                  <div class="mySlides fade">
+                      <div class="numbertext">1/4</div>
+                      <img src="/home/nitish/Desktop/Campuscanteen/images/breakfast.jpg">
+                      <div class="text"><h1>Breakfast</h1></div>
+                  </div>
+                  <div class="mySlides fade">
+                      <div class="numbertext">2/4</div>
+                      <img src="/home/nitish/Desktop/Campuscanteen/images/lunch.jpg">
+                      <div class="text"><h1>Lunch</h1></div>
+                  </div>
+                  <div class="mySlides fade">
+                      <div class="numbertext">3/4</div>
+                      <img src="/home/nitish/Desktop/Campuscanteen/images/sandb.jpeg">
+                      <div class="text"><h1>Snack and Beverages</h1></div>
+                  </div>
+                  <div class="mySlides fade">
+                      <div class="numbertext">4/4</div>
+                      <img src="/home/nitish/Desktop/Campuscanteen/images/spl.jpg">
+                      <div class="text"><h1>Canteen Special</h1></div>
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <script>
+                  var slideIndex = 0;
+                  showSlides();
+                  function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for(i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if(slideIndex > slides.length) {
+                      slideIndex = 1
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 2000);
+                  }
+                </script>
+    <h1 style="text-align: center; padding: 0px;">FOOD SECTION : 1 </h1>
         <div class="countainer1">
-        
             
             <div class="box1">
         <div class="item">Bisibelebath<img src="C:\Users\siddu\Desktop\Campuscanteen-main\menu\bisibelebath.jpg"></div>
