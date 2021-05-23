@@ -55,6 +55,12 @@ h1,h2,h3,h4,h5,h6,p{
     width:fit-content;
     cursor: pointer;
 }
+.logo a{
+    font-family: cursive;
+    color:cornsilk;
+    text-decoration: none;
+    align-items: center;
+}
 
 .btn{
     background: var(--darkGreen);
