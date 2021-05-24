@@ -9,6 +9,7 @@ let loginbtn=document.querySelector(".loginbtn");
 window.addEventListener("load",function(){
     submitbtn.addEventListener("click",submitbtnHandler);
     registerbtn.addEventListener("click",registerbtnHandler);
+    console.log("hello");
 
 })
 function registerbtnHandler(){
@@ -20,10 +21,12 @@ async function submitbtnHandler(e){
         e.preventDefault();
         if(email.value && pw.value){
         console.log(email.value,pw.value);
-        let obj = await axios.post( "https://foodcolony.herokuapp.com/user/login" , {email:email.value , password:pw.value});
+        let obj = await axios.post( "" , {email:email.value , password:pw.value});
         console.log(obj);
+            
         if(obj.data.data){
             window.location.href="../menu/item.html";
+            
 
         }
         else{
@@ -34,4 +37,5 @@ async function submitbtnHandler(e){
     }catch(error){
         HTMLFormControlsCollection.log(error);
     }
+    
 }
