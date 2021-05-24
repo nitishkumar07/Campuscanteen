@@ -5,6 +5,9 @@
 
     font-family:'Merriweather Sans', sans-serif;
 }
+body{
+  width: 1300;
+}
 .logo{
     text-decoration: none;
     color:#ff0000;
@@ -118,10 +121,10 @@ li a:hover {
 
       margin-top: 10px;
     vertical-align:middle;
-    padding-left: 50px;
+    padding-left: 30px;
 
-    width:1300px;
-    height:310px;
+    width:1200px;
+    height:450px;
   }
 
     /* Next & previous buttons */
@@ -150,14 +153,12 @@ li a:hover {
     .next:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
-    .text {
+    /* .text {
         padding-bottom: 0px;
       color: #210d2298;
       font-size: 30px;
       text-align: center;
-      position: absolute;
-      width: 100%;
-    }
+      /* position: absolute; */
     .numbertext {
       color: #ffffff;
       font-size: 20px;
@@ -215,15 +216,26 @@ li a:hover {
     .first{
         height: 100px;
         padding-bottom: 400px;
-        padding-top: 30px;
+        padding-top: 20px;
+    }
+    .first a{
+      text-decoration: none;
+      color: rgb(8, 134, 238);
+    }
+    .first h1{
+      padding-top: 0%;
+      size: 60px;
     }
 
-h1:hover{
+.first h1:hover{
     color: rgba(8, 235, 8, 0.328);
 }
+
 h1{
     text-align: center;
+    padding-top: 200px;
 }
+
 .box1{
     display: flex;
     flex-direction:column;
@@ -266,13 +278,14 @@ h1{
 .ck{
     border: 2px;
 }
+
 .countainer1{
-    padding-top: 0px;
+    padding-top: 50px;
 }
 .countainer1, .countainer2{
     display: inline-flex;
     flex-direction: row;
-    padding-left: 50px;
+    padding-left: 10px;
 
     
 }

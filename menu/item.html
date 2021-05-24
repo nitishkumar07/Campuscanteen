@@ -21,45 +21,29 @@
   
                   <div class="mySlides fade">
                       <div class="numbertext">1/4</div>
-                      <img src="slide2.jpg">
-                      <div class="text"><h1>Breakfast</h1></div>
+                      <a href="#hh1"><img src="ssslider2.jpeg"></a>
+                      <a href="#hh1"><h1>Breakfast</h1></a>
                   </div>
                   <div class="mySlides fade">
                       <div class="numbertext">2/4</div>
-                      <img src="slide3.jpg">
-                      <div class="text"><h1>Lunch</h1></div>
+                      <a href="#Lunch"><img src="sliddder3.jpeg"></a>
+                      <a href="#Lunch"><h1>Lunch</h1></a>
                   </div>
                   <div class="mySlides fade">
                       <div class="numbertext">3/4</div>
-                      <img src="slide4.jpg">
-                      <div class="text"><h1>Snack and Beverages</h1></div>
+                      <a href="#snack"><img src="snacks.jpeg"></a>
+                      <a href="#snack"><h1>Snack and Beverages</h1></a>
                   </div>
                   <div class="mySlides fade">
                       <div class="numbertext">4/4</div>
-                      <img src="slide5.jpg">
-                      <div class="text"><h1>Canteen Special</h1></div>
+                      <a href="sp"><img src="sllast.jpeg"></a>
+                      <a href="sp"><h1>Canteen Special</h1></a>
                   </div>
                   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                   <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <script>
-                  var slideIndex = 0;
-                  showSlides();
-                  function showSlides() {
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    for(i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none";
-                    }
-                    slideIndex++;
-                    if(slideIndex > slides.length) {
-                      slideIndex = 1
-                    }
-                    slides[slideIndex - 1].style.display = "block";
-                    setTimeout(showSlides, 2000);
-                  }
-                </script>
-    <h1 style="text-align: center; padding: 0px;">FOOD SECTION : 1 </h1>
+                
+    <h1 id="hh1" >BREAKFAST</h1>
         <div class="countainer1">
             
             <div class="box1">
@@ -177,7 +161,7 @@
         <div class="countainer2">
         
             
-            <div class="box1">
+            <div id="sp" class="box1">
                 <div class="item">Avalakki
                     <img src="avalakki.jpg" />
                 </div>
@@ -293,7 +277,7 @@
        </div>
         </div>
         <div>
-        <h1 style="text-align: center;">FOOD SECTION : 2</h1>
+        <h1 id="Lunch">Lunch</h1>
         </div>
         <div class="countainer1">
         
@@ -531,7 +515,7 @@
        </div>
         </div>
         <div>
-        <h1>SNAKS SECTION</h1>
+        <h1 id="snack">SNACKS</h1>
         </div>
         <div class="countainer1">
         
@@ -769,6 +753,23 @@
             </div>
        </div>
         </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for(i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if(slideIndex > slides.length) {
+                slideIndex = 1
+              }
+              slides[slideIndex - 1].style.display = "block";
+              setTimeout(showSlides, 2000);
+            }
+          </script>
     
     
     
