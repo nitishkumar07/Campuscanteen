@@ -1,0 +1,61 @@
+﻿body
+{
+    padding:40px;
+    font-size:larger;
+    font-style:italic;
+    background-color:aliceblue;
+    font-size:x-large;
+}
+#name{
+    
+    font-size:inherit;
+}
+#namein {
+    font-size: inherit;
+}
+#usename {
+    font-size: inherit;
+}
+#date {
+    font-size: inherit;
+}
+#email{
+    font-size: inherit;
+}
+#phone {
+    font-size: inherit;
+}
+button {
+    font-size: xx-large;
+    font-style: oblique;
+    background-color:dodgerblue;
+    text-align:center;
+    display:inline-block;
+    margin:30px;
+    text-decoration:none;
+    position:relative;
+    padding:0.35em 1em;
+    background:#668ad8;
+    color:#fff;
+}
+button:before{
+    content:"";
+    position:absolute;
+    top:-16px;
+    left:0;
+    width:100% -16px;
+    height:0;
+    border:solid 8px thin;
+    border-bottom-color:#8eacec;
+}
+button:hover{
+    padding:0.32em 0.9em;
+    -ms-transform:translate(-2px);
+    -webkit-transform:translate(-2px);
+    transform:translate(-2px);
+    background-color:darkblue;
+}
+form{
+    padding:40px;
+    font-size:x-large;
+}

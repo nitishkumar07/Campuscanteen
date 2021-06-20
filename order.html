@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="order.css" />
+   
+</head>
+<body>
+    <h1>Order Summary : </h1>
+
+    First name:  <input id="name" type="text" onblur="checkname();" required /><span id="name1"></span><br /><br />
+    Last name:<input id="namein" type="text" onblur="checkname1();" required /><span id="name2"></span><br /><br />
+    Username:<input id="usename" type="text" onblur="checkname1();" required /><span id="name6"></span><br /><br />
+    Date of birth:<input id="date" type="date" placeholder="dd/mm/yyyy" required /><span id="name3"></span><br /><br />
+    Email adress:<input id="email" type="text" placeholder="Eg:abcd@email.com" /><span id="name4"></span><br /><br />
+    Phone Number:<input id="phone" type="tel" onblur="checkPhone();" placeholder="+xx xxx xxx xxxx" /><span id="name5"></span><br /><br />
+
+
+    <script>
+        function checkname() {
+            var name1 = document.getElementById("name").nodeValue;
+
+            if (length.name1 == 0)
+                document.getElementById("name1").innerHTML = "not Valid";
+            else
+                document.getElementById("name1").innerHTML = "<strong>Valid</strong>";
+        }
+        function checkname1() {
+            var namee = document.getElementById("name2").nodeValue;
+            var regex = /^[A-Za-z]{3}$/;
+            if (regex.test(name2))
+                document.getElementById("name2").innerHTML = "not Valid";
+            else
+                document.getElementById("name2").innerHTML = "<strong>Valid</strong>";
+        }
+        function checkPhone() {
+            var number = document.getElementById("phone").value;
+            var regex = /^\d{2}-\d{10}$/;
+
+            if (regex.test(number)) {
+                document.getElementById("name5").innerHTML = "<strong>valid</strong>";
+                document.getElementById("name5").style.color = "#00FF00";
+            }
+            else {
+                document.getElementById("name5").innerHTML = "<strong>invalid</strong>";
+                document.getElementById("name5").style.color = "#FF0000";
+            }
+        }
+
+        function register() {
+            document.getElementById("profileSummary").innerHTML =
+                "<h2>Order confirmed!!!</h2>" +
+                "Name: " + document.getElementById("name").value +
+                "<br> Username: " + document.getElementById("usename").value +
+                "<br> E-Mail: " + document.getElementById("email").value +
+                "<br> Phonenumber: " + document.getElementById("phone").value +"<strong><br><br>you will get your food soon!!</strong>";
+        }
+
+
+    </script>
+    <form>
+        <input type="radio" name="food" value="Breakfast" checked />Breakfast<br />
+        <input type="radio" name="food" value="Lunch" checked />Lunch<br />
+        <input type="radio" name="food" value="Snaks" checked />Snaks<br />
+        <input type="radio" name="food" value="Dinner" checked />Dinner<br />
+    </form>
+    <button type="button" onclick="register();">Submit</button>
+    <p id="profileSummary"></p>
+
+</body>
+</html>
